@@ -4,7 +4,7 @@ import pandas as pd
 from regression_model.processing.data_management import load_pipeline
 from regression_model.config import config
 from regression_model.processing.validation import validate_inputs
-#import __version__ as _version
+from regression_model import __version__ as _version
 
 import logging
 import typing as t
