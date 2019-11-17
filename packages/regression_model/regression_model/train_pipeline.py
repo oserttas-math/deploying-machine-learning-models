@@ -1,24 +1,24 @@
 import numpy as np
 from sklearn.model_selection import train_test_split
 
-from regression_model import pipeline
-from regression_model.processing.data_management import (
+import pipeline
+from processing.data_management import (
     load_dataset, save_pipeline)
-from regression_model.config import config
-from regression_model import __version__ as _version
+from config import config
+#from regression_model import __version__ as _version
 
 import logging
 
 
 _logger = logging.getLogger(__name__)
 
-def save_pipeline(*, pipeline_to_persist) -> None:
-    '''Persist the pipeline'''
-    save_file_name = 'regression_model.pkl'
-    save_path = TRAINED_MODEL_DIR / save_file_name
-    joblib.dump(pipeline_to_persist, save_path)
-
-    print('saved pipeline')
+# def save_pipeline(*, pipeline_to_persist) -> None:
+#     '''Persist the pipeline'''
+#     save_file_name = 'regression_model.pkl'
+#     save_path = TRAINED_MODEL_DIR / save_file_name
+#     joblib.dump(pipeline_to_persist, save_path)
+#
+#     print('saved pipeline')
 
 
 def run_training() -> None:

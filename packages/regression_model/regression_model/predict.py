@@ -1,10 +1,10 @@
 import numpy as np
 import pandas as pd
 
-from regression_model.processing.data_management import load_pipeline
-from regression_model.config import config
-from regression_model.processing.validation import validate_inputs
-from regression_model import __version__ as _version
+from processing.data_management import load_pipeline
+from config import config
+from processing.validation import validate_inputs
+#import __version__ as _version
 
 import logging
 import typing as t
