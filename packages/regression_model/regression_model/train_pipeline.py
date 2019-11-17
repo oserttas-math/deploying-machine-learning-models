@@ -12,6 +12,14 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
+def save_pipeline(*, pipeline_to_persist) -> None:
+    '''Persist the pipeline'''
+    save_file_name = 'regression_model.pkl'
+    save_path = TRAINED_MODEL_DIR / save_file_name
+    joblib.dump(pipeline_to_persist, save_path)
+
+    print('saved pipeline')
+
 
 def run_training() -> None:
     """Train the model."""
