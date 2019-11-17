@@ -3,7 +3,7 @@ from logging.handlers import TimedRotatingFileHandler
 import os
 import sys
 
-from config import config
+from regression_model.config import config
 
 # Multiple calls to logging.getLogger('someLogger') return a
 # reference to the same logger object.  This is true not only

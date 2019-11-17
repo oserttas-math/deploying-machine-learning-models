@@ -1,11 +1,11 @@
 import numpy as np
 from sklearn.model_selection import train_test_split
 
-import pipeline
-from processing.data_management import (
+from regression_model import pipeline
+from regression_model.processing.data_management import (
     load_dataset, save_pipeline)
-from config import config
-#from regression_model import __version__ as _version
+from regression_model.config import config
+from regression_model import __version__ as _version
 
 import logging
 
