@@ -11,7 +11,9 @@ from api import __version__ as api_version
 
 _logger = get_logger(logger_name=__name__)
 
-
+# The basic concept of blueprints is that they record operations
+# to execute when registered on an application. So it's like a code
+# template for generating a section of your application which gives you flexibility
 prediction_app = Blueprint('prediction_app', __name__)
 
 
