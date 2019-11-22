@@ -3,6 +3,9 @@
 # api
 flask==1.0.2
 
+# local regression_model package
+# update with your local path
+-e "~/Google Drive/ResearchImac/DeploymentMLModels/deploying-machine-learning-models/packages/regression_model"
 # schema validation
 marshmallow==2.17.0
 
